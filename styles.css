@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body, html, #root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  background: rgba(255,255,255,0.93);
+  border-radius: 18px;
+  box-shadow: 0 8px 40px rgba(140,120,120,0.21);
+  padding: 32px 24px;
+  min-width: 340px;
+  width: 100%;
+  max-width: 560px;
+  margin: 30px;
+  text-align: center;
+  animation: fadeIn 0.7s;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #324a5f;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  text-shadow: 1px 2px 18px #f3f3fc;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 36px;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  color: #999;
+  font-size: 0.95rem;
+  margin-top: 28px;
+}
+
+.main-btn {
+  background: linear-gradient(90deg, #ff5a5f 60%, #fecfef 100%);
+  color: #fff;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 46px;
+  box-shadow: 0 3px 18px rgba(255,90,95,0.17);
+  font-size: 1.09rem;
+  margin: 10px 8px 22px 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.12s;
+}
+.main-btn:hover {
+  background: linear-gradient(90deg, #ff5a5f 70%, #f79ac7 100%);
+  transform: scale(1.04);
+}
+
+.card {
+  max-width: 340px;
+  margin: 48px auto 0 auto;
+  text-align: left;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px #0000001a;
+  padding: 32px 18px 19px 18px;
+  animation: fadeIn 0.55s;
+}
+
+input {
+  display: block;
+  margin: 11px 0;
+  padding: 10px;
+  width: 90%;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 1px solid #eee;
+  background: #f6fffe;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #a8edea;
+}
+
+.switchlink {
+  color: #2a8dd3;
+  text-decoration: underline;
+  margin: 12px 0 10px 0;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff5a5f;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.dashboard {
+  margin: 0;
+  text-align: center;
+}
+
+.section { margin-bottom: 36px; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.logout-btn {
+  background: #e14b50;
+  color: #fff;
+  border: none;
+  border-radius: 19px;
+  padding: 7px 18px;
+  font-size: 1.07rem;
+  cursor: pointer;
+}
+
+.data-list {
+  margin: 14px auto 16px auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.data-list li {
+  background: linear-gradient(90deg, #f9fafc, #ffeef2 100%);
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 12px #eedaed44;
+}
+
+.lesson-title, .goal-title {
+  font-weight: bold;
+  color: #ff5a5f;
+}
+
+.sub-form input {
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 7px;
+}
+
+.sub-form button {
+  width: 96%;
+  margin-top: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.fade-in {
+  animation: fadeIn 0.86s;
+}
